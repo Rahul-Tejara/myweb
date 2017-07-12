@@ -1,0 +1,140 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+        <meta charset="UTF-8">
+		    <meta name="description" content="MAG STORE">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    	  <title>MAG STORE</title>
+		    <link rel="icon" href="./images/MITO-Studios-Icon-Teal.jpg" sizes="32x32">
+    	  <!-- its for css files  -->
+    	  <link rel="stylesheet" type="text/css" href="./css/comman.css">
+    	  <!--  its for  jquery -->
+    	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+				<!--fontawesome -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	  <!-- its for js files -->
+				<script type="text/javascript" src ="./js/Constant.js"></script>
+    	 	<script type="text/javascript" src ="./js/tabConatins.js"></script>
+			  <script type="text/javascript" src ="./js/service.js"></script>
+</head>
+		  
+<body>
+    <!-- header start -->
+    <header>
+       <div class="header">
+         <!-- its for ipad device-->
+          <div class="menu-for-device">
+            <div class="dropdown">
+              <span onclick="menuList()" ><i class="fa fa-bars dropbtn" aria-hidden="true"></i></span>
+            <div id="myDropdown" class="dropdown-content tabs">
+                <li><a href="#trending" >Trending</a></li>
+                <li><a href="#entertainment" >Entertainment</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#food">Food</a></li>
+            </div>
+            </div>
+          </div>
+        
+          <div class="logo">
+            <img src="./images/timeinc_logo.svg"  alt="Time inc" width="100" height="60">
+          </div>
+          <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Search.."> 
+            <i class="fa fa-search" title="Search Product" onclick="serachItem()" aria-hidden="true"></i> 
+          </div>
+          <div class="item-cart">
+              <span class="cart-text">MY CART</span>
+              <span id ="total-item-cart">0 </span>
+              <i class="fa fa-shopping-cart" title="Your CART Item" aria-hidden="true" onclick="displayCartItem()"></i>
+          </div>
+     </div>
+   </header>
+   <!--second header div-->
+       <div class="second-header">
+		   <!--its for main heading -->
+		 	  <div class="heading">
+					<h1>MAG  STORE</h1>	
+		      </div>
+	     </div>
+         <!--  nav bar start -->
+      <nav>
+		  	<div class="sub-header">
+					<ul class="tabs">
+						<li>
+								<a href="#trending" >Trending</a>
+						</li>
+						<li>
+							<a href="#entertainment" >Entertainment</a>
+						</li>
+						<li>
+							<a href="#travel">Travel</a>
+						</li>
+						<li>
+							<a href="#food">Food</a>
+						</li>
+					</ul>
+		  	</div>
+	   </nav>
+		
+    
+   <!-- body contains -->
+       <section class="block">
+				  <!-- its for first tab  -->
+		     <section class="images-container" id="trending" >
+				  <!--image product contaion-->
+				  </section>
+					 <!-- its for second tab2 -->
+	        <section class="images-container" id="entertainment" > 
+		        <!-- image prodcut contain  -->
+	        </section>
+	        <!--  its for third tab3 -->
+	        <section class="images-container" id="travel" > 
+		      <!-- image prodcut contain  -->
+			    </section>
+	        <!--  its for fourth tab4 -->
+	        <section class="images-container" id="food" > 
+						<!--image contain-->
+					</section>
+			       
+        </section>
+	   
+			<!--serach-section-->
+			<div>
+				<section class="images-container" id="search-item" > </section>
+			</div>
+				<!-- shopping card section-->
+			<div class="shopping-cart" id = "cart-pop-up-display">
+
+			</div>
+
+   <!-- footer start -->
+     <footer>
+      <div class="footer-display">
+				<div class="footer-call-email">
+					<div class="email">
+				   <div ><input class="email-box" type="email" name="email-name" placeholder="Enter Email Address"> </div>
+				   <button type="button" onclick="emailSubscribe()"  >SubScribe</button>
+					</div>
+					 <div class="call-btn">
+						 <i class="fa fa-phone btn-phone" aria-hidden="true"<a href="tel:+91-7411946824"></a></i> 
+					  <span style="color: aliceblue;"> +91-7411946824</span> 
+					</div>
+				</div>
+				<div class="footer-icons">
+					<p>Connect with Us  </p>
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+					<i class="fa fa-google-plus" aria-hidden="true"></i>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+				</div>
+       
+      </div>
+     </footer>
+    
+    
+</body>
+</html>

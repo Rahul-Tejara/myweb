@@ -1,0 +1,111 @@
+
+   .checkout-main-container{
+     margin-top: 2%;
+   }
+   .check-cart-container{
+		position: absolute;
+        background-color: darkseagreen;
+        margin-left: 78px;
+	}
+    .check-cart-item-list {
+        padding: 8px 81px; 
+		display: flex;
+	}
+    
+
+	.check-cart-item-list:nth-child(2) {
+		border-top:  1px solid #E1E8EE;
+		border-bottom:  1px solid #E1E8EE;
+	}
+    .check-cart-item-list .check-image img{
+		height: 215px;
+	}
+
+    .check-image{ 
+		margin-right: 70px;
+	}
+
+    /* Product Description */
+	.check-cart-description {
+		padding-top: 89px;
+		margin-right: 60px;
+		width: 115px;
+	}
+
+	.check-cart-description span {
+		display: block;
+		font-size: 14px;
+		color: #43484D;
+		font-weight: 400;
+	}
+
+	.check-cart-description span:first-child {
+		margin-bottom: 5px;
+        color: black;
+        font-size: 23px;
+	}
+	.check-cart-description span:last-child {
+		font-weight: 300;
+		margin-top: 8px;
+		color: #eee;
+	}
+
+    
+	/* Product Quantity */
+	.check-cart-quantity {
+		padding-top: 103px;
+		margin-right: 24px;
+	}
+	.check-cart-quantity input {
+		-webkit-appearance: none;
+		border: none;
+		text-align: center;
+		width: 32px;
+		font-size: 16px;
+		color: #43484D;
+		font-weight: 300;
+	}
+	/* Total Price */
+	.check-cart-total-price {
+		width: 83px;
+		padding-top: 100px;
+		text-align: center;
+		color: black;
+        font-size: 23px;
+		font-weight: 300;
+	}
+
+    /*pop-up css for final-payable */
+    .amount-payable{
+        position: absolute;
+        background-color: beige;
+        margin-left: 71%;
+    }
+    .amount-description{
+        padding: 18px 58px 20px 33px;
+		
+    }
+    .amount-description .price-detatils{
+       color: black;
+       text-transform: uppercase;
+    }
+    .amount-description .item-price{
+        display: flex;
+        margin: 26px 0;
+
+    }
+    .amount-description .delivery-price{
+       display: flex;
+       margin: 26px 0;
+    }
+    .amount-description .total-amount-payable{
+       display: flex;
+       margin: 26px 0;
+    }
+    .amount-description .price {
+        padding-left: 132px;
+    }
+    .btn-place-order{
+        cursor: pointer;
+        font-weight: bold;
+    }

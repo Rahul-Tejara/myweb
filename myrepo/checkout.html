@@ -1,0 +1,137 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+        <meta charset="UTF-8">
+		<meta name="description" content="MAG STORE">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    	  <title>MAG STORE</title>
+		  <link rel="icon" href="./images/MITO-Studios-Icon-Teal.jpg" sizes="32x32">
+    	  <!-- its for css files  -->
+    	  <link rel="stylesheet" type="text/css" href="./css/comman.css">
+          <!--its for checkout file css-->
+          <link rel="stylesheet" type="text/css" href="./css/checkout.css">
+    	  <!--  its for  jquery -->
+    	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+				<!--fontawesome -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	  <!-- its for js files -->
+				<script type="text/javascript" src ="./js/Constant.js"></script>
+    	 <script type="text/javascript" src ="./js/checkOut.js"></script>
+</head>
+		  
+<body>
+
+    <!-- header start -->
+    <div class="main-id">
+    <header>
+       <div class="header">
+         <!-- its for device-->
+          <div class="menu-for-device">
+            <div class="dropdown">
+              <span onclick="menuList()" ><i class="fa fa-bars dropbtn" aria-hidden="true"></i></span>
+            <div id="myDropdown" class="dropdown-content tabs">
+                <li><a href="#trending" >Trending</a></li>
+                <li><a href="#entertainment" >Entertainment</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#food">Food</a></li>
+            </div>
+            </div>
+          </div>
+        
+          <div class="logo">
+            <img src="./images/timeinc_logo.svg"  alt="Time inc" width="100" height="60">
+          </div>
+          <div class="search-box">
+            <input type="text" name="search" placeholder="Search.."> 
+            <i class="fa fa-search" title="Search Product" aria-hidden="true"></i> 
+          </div>
+          <div class="item-cart">
+              <span class="cart-text">MY CART</span>
+              <span id ="total-item-cart">0 </span>
+              <i class="fa fa-shopping-cart" title="Your CART Item" aria-hidden="true" onclick="displayCartItem()"></i>
+          </div>
+     </div>
+   </header>
+   <!--second header div-->
+       <div class="second-header">
+		   <!--its for main heading -->
+		 	  <div class="heading">
+					<h1>MAG  STORE</h1>	
+		      </div>
+		   <!-- its for search box-->
+		   
+	    </div>
+         <!--  nav bar start -->
+      <nav>
+				<div class="sub-header">
+					<ul class="tabs">
+						<li>
+							 <a href="#trending" >Trending</a>
+						</li>
+						<li>
+							 <a href="#entertainment" >Entertainment</a>
+						</li>
+						<li>
+						   <a href="#travel">Travel</a>
+						</li>
+						<li>
+							 <a href="#food">Food</a>
+						</li>
+					</ul>
+			</div>
+	  </nav>
+		
+    
+   <!-- body contains -->
+   <!-- cart item -->
+ <div class="checkout-main-container">
+   <div class="check-cart-container" id="cartContainer-id">
+   </div>
+    <!-- make one -pop-up for final payment -->
+    <div class="amount-payable"> 
+         <div class="amount-description">
+             <div class="price-detatils">
+                 <span>Price details</span>
+             </div>
+             <!--<span class="price-detatils">PRICE DETAILS </span>-->
+             <div class="item-price">
+                <div id ="final-item"> </div>
+                <div class="price" id="final-price"></div>
+             </div> 
+             <div class="delivery-price">
+                <div> DeliveryCharge</div>
+                <div class="price" id="delivery-charge">$2 </div>
+             </div>
+             <div class="total-amount-payable">
+                <div> Sub-Total Pay</div>
+                <div class="price" id="suTotal"></div>
+             </div>
+             <div>
+                 <input type="button"  class="btn-place-order" title="Pay amount" onclick = "checkOut()" value="PLCAE ORDER">
+                 
+             </div>
+         </div>
+    </div>
+
+ </div>  
+
+
+    
+
+   <!-- footer start -->
+     
+	<!-- footer end -->
+   </div>
+   <!--<footer>
+      <div class="footer-display">
+        <span> Time Inc. © 2017 </span>
+      </div>
+		
+     </footer>-->
+    
+    
+</body>
+</html>
